@@ -86,8 +86,12 @@
 .download {
     position: absolute;
     top: 40px;
+
+    /* 两种方式实现左右居中 */
     left: 50%;
-    margin-left: -62px;
+    /* margin-left: -62px; */
+    transform: translate(-50%, 0);
+    
     width: 124px;
     height: 0;
     overflow: hidden;
@@ -112,6 +116,7 @@
     display: block;
 }
 
+/* 绘制三角形 */
 .triangle {
     position: absolute;
     bottom: 0;
@@ -322,6 +327,7 @@
     height: 42px;
     line-height: 42px;
     text-align: left;
+    cursor: pointer;
 }
 
 .slide>ul>li:hover {
@@ -373,7 +379,6 @@
 .slide-list img {
     margin-right: 12px;
     vertical-align: middle;
-    /* float: left; */
 }
 
 .slide-list span {
